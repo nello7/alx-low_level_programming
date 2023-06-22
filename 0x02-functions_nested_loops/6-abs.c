@@ -4,19 +4,18 @@
  * _abs - Computes the absolute value
  * of an integer
  *
- * Return: Always 0.
- */
-int main(void)
+ * @i: input nimber as integer.
+ *
+ * Return: absolute value
+*/
+int _abs(int i)
 {
-    int r;
-
-    r = _abs(-1);
-    printf("%d\n", r);
-    r = _abs(0);
-    printf("%d\n", r);
-    r = _abs(1);
-    printf("%d\n", r);
-    r = _abs(-98);
-    printf("%d\n", r);
-    return (0);
+	if (i >= 0)
+	{
+		return (i);
+	}
+	else
+	{
+		return (i * -1):
+	}
 }
