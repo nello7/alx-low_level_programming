@@ -2,7 +2,7 @@
 
 /**
  * _abs - Computes the absolute value
- * of an integer
+ * of an integer.
  *
  * @i: input nimber as integer.
  *
@@ -16,6 +16,6 @@ int _abs(int i)
 	}
 	else
 	{
-		return (i * -1):
+		return (i * -1);
 	}
 }
