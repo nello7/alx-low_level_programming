@@ -1,42 +1,61 @@
 #include "main.h"
 
 /**
- * print_square - prints a square, followed by a new line;
- * @size: size of the square
- */
-void print_square(int size)
-{
-	if (size <= 0)
-	{
-		_putchar('\n');
-	} else
-	{
-		int i, j;
-
-		for (i = 0; i < size; i++)
-		{
-			for (j = 0; j < size; j++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
-	}
-}
-
-
-8-main.c
-#include "main.h"
-
-/**
  * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    print_square(2);
-    print_square(10);
-    print_square(0);
+    jack_bauer();
     return (0);
 }
+
+
+
+=====================================
+
+
+#include "main.h"
+
+
+	/**
+	 * times_table - prints the 9 times table, starting with 0
+	 */
+	void times_table(void)
+	{
+		int i, j, k;
+
+
+		for (i = 0; i < 10; i++)
+		{
+			for (j = 0; j < 10; j++)
+			{
+				k = j * i;
+				if (j == 0)
+				{
+					_putchar(k + '0');
+				}
+
+
+				if (k < 10 && j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(k + '0');
+				} else if (k >= 10)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((k / 10) + '0');
+					_putchar((k % 10) + '0');
+				}
+			}
+			_putchar('\n');
+		}
+	}
+
+
+
+======================================
